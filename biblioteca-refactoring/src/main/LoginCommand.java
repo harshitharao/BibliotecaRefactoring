@@ -5,6 +5,6 @@ public class LoginCommand implements Command{
     @Override
     public void execute()
     {
-        new Program().login();
+        new Action().login();
     }
 }
