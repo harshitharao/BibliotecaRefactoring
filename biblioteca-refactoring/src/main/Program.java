@@ -13,51 +13,27 @@ public class Program {
 
             InputStreamReader inputStream = new InputStreamReader(System.in);
             BufferedReader reader = new BufferedReader(inputStream);
-            int menuindex=new ConsoleInput().read();
+            int menuindex = 0;
+            menuindex=new ConsoleInput().read();
 
             if (menuindex == 1) {
                 new BooksDisplayAndReserve().displayBooks();
             } else if (menuindex == 2)
                 new BooksDisplayAndReserve().reserveBook();
 
-            else if (menuindex == 3) {
-                if (loggedIn()) {
-                    System.out.println("\n");
-                    System.out.println("Your library number is " + savedLibraryNumber);
-                } else {
-
-                    System.out.println("\n");
-                    System.out.println("Please talk to Librarian. Thank you.");
-                }
-            } else if (menuindex == 4) {
+            else if (menuindex == 3)
+                   new Program().checkLibraryNumber();
+                else if (menuindex == 4) {
                 new Movie().displayMovies();
             } else if (menuindex == 5) {
-                clearLogin();
-                System.out.println("Enter your library number");
-                try {
-                    String libraryNumber = reader.readLine();
-                    if (validLibraryNumber(libraryNumber)) {
-                        try {
-                            System.out.println("Enter your Password: ");
-                            String password = reader.readLine();
-                            if (validPassword(password)) {
-                                loggedIn = true;
-                                savedLibraryNumber = libraryNumber;
-                            }
-                        } catch (Exception e) {
-
-                        }
-                    }
-                } catch (Exception e) {
-
-                }
+                 new Program().login();
 
             } else if (menuindex == 9) {
                 System.out.println("Quitting...");
                 break;
             } else {
-                System.out.println("\n");
-                System.out.println("Enter a valid integer!!");
+
+                System.out.println("\nEnter a valid integer!!");
             }
         }
     }
@@ -96,6 +72,37 @@ public class Program {
     private static void clearLogin() {
         loggedIn = false;
         savedLibraryNumber = "";
+    }
+    public void checkLibraryNumber() {
+        if (loggedIn()) {
+
+            System.out.println("\nYour library number is " + savedLibraryNumber);
+        } else {
+            System.out.println("\nPlease talk to Librarian. Thank you.");
+        }
+    }
+    public void login() {
+        clearLogin();
+        InputStreamReader inputStream = new InputStreamReader(System.in);
+        BufferedReader reader=new BufferedReader(inputStream);
+        System.out.println("Enter your library number");
+        try {
+            String libraryNumber = reader.readLine();
+            if (validLibraryNumber(libraryNumber)) {
+                try {
+                    System.out.println("Enter your Password: ");
+                    String password = reader.readLine();
+                    if (validPassword(password)) {
+                        loggedIn = true;
+                        savedLibraryNumber = libraryNumber;
+                    }
+                } catch (Exception e) {
+
+                }
+            }
+        } catch (Exception e) {
+
+        }
     }
 
   }

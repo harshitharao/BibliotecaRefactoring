@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7f4cbfe-6384-480b-8270-06e4913fa6e7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Biblioteca-refactoring/main/Program.class" afterPath="$PROJECT_DIR$/out/production/Biblioteca-refactoring/main/Program.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biblioteca-refactoring/src/main/Program.java" afterPath="$PROJECT_DIR$/biblioteca-refactoring/src/main/Program.java" />
-    </list>
+    <list default="true" id="b7f4cbfe-6384-480b-8270-06e4913fa6e7" name="Default" comment="" />
     <ignored path="biblioteca-refactoring (1).iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,7 +61,7 @@
       <file leaf-file-name="Program.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="107" selection-start="3603" selection-end="3603" vertical-scroll-proportion="1.6628308">
+            <state line="58" column="145" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.9976985">
               <folding />
             </state>
           </provider>
@@ -151,16 +146,22 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="biblioteca-refactoring (1)" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Biblioteca-refactoring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -213,16 +214,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -521,7 +512,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="107" selection-start="3603" selection-end="3603" vertical-scroll-proportion="1.6628308">
+        <state line="58" column="145" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.9976985">
           <folding />
         </state>
       </provider>
