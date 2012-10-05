@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7f4cbfe-6384-480b-8270-06e4913fa6e7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Biblioteca-refactoring/main/Program.class" afterPath="$PROJECT_DIR$/out/production/Biblioteca-refactoring/main/Program.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biblioteca-refactoring/src/main/Program.java" afterPath="$PROJECT_DIR$/biblioteca-refactoring/src/main/Program.java" />
     </list>
@@ -66,7 +64,43 @@
       <file leaf-file-name="Program.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="12" selection-start="308" selection-end="308" vertical-scroll-proportion="0.21518987">
+            <state line="12" column="12" selection-start="308" selection-end="308" vertical-scroll-proportion="-0.987013">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExitCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/ExitCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/LoginCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="21" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DisplayMoviesCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/DisplayMoviesCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckLibraryNumberCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/CheckLibraryNumberCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="21" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,15 +142,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Movie.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/Movie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ConsoleInput.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/ConsoleInput.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -146,6 +171,10 @@
         <option value="$PROJECT_DIR$/biblioteca-refactoring/src/main/Command.java" />
         <option value="$PROJECT_DIR$/biblioteca-refactoring/src/main/ReserveBookCommand.java" />
         <option value="$PROJECT_DIR$/biblioteca-refactoring/src/main/BookReservationCommand.java" />
+        <option value="$PROJECT_DIR$/biblioteca-refactoring/src/main/CheckLibraryNumberCommand.java" />
+        <option value="$PROJECT_DIR$/biblioteca-refactoring/src/main/DisplayMoviesCommand.java" />
+        <option value="$PROJECT_DIR$/biblioteca-refactoring/src/main/LoginCommand.java" />
+        <option value="$PROJECT_DIR$/biblioteca-refactoring/src/main/ExitCommand.java" />
         <option value="$PROJECT_DIR$/biblioteca-refactoring/src/main/Program.java" />
       </list>
     </option>
@@ -182,20 +211,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="biblioteca-refactoring (1)" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Biblioteca-refactoring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,6 +269,16 @@
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca-refactoring (1)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -535,6 +560,31 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/ExitCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/LoginCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/DisplayMoviesCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/CheckLibraryNumberCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="21" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/BookReservationCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="35" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" />
@@ -555,11 +605,6 @@
         <state line="22" column="0" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/ConsoleInput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="20" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" />
@@ -567,7 +612,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/biblioteca-refactoring/src/main/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="308" selection-end="308" vertical-scroll-proportion="0.21518987">
+        <state line="12" column="12" selection-start="308" selection-end="308" vertical-scroll-proportion="-0.987013">
           <folding />
         </state>
       </provider>

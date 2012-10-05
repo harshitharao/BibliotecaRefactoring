@@ -18,14 +18,14 @@ public class Program {
                 new BookReservationCommand().execute();
 
             else if (menuindex == 3)
-                   new Program().checkLibraryNumber();
+                   new CheckLibraryNumberCommand().execute();
                 else if (menuindex == 4) {
-                new Movie().displayMovies();
+                new DisplayMoviesCommand().execute();
             } else if (menuindex == 5) {
-                 new Program().login();
+                 new LoginCommand().execute();
 
             } else if (menuindex == 9) {
-                System.out.println("Quitting...");
+                new ExitCommand().execute();
                 break;
             } else {
 
