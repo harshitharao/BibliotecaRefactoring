@@ -10,16 +10,12 @@ public class Program {
     public static void main(String[] args) {
         while (true) {
             displayMenu();
-
-            InputStreamReader inputStream = new InputStreamReader(System.in);
-            BufferedReader reader = new BufferedReader(inputStream);
-            int menuindex = 0;
-            menuindex=new ConsoleInput().read();
+            int menuindex=new ConsoleInput().read();
 
             if (menuindex == 1) {
-                new BooksDisplayAndReserve().displayBooks();
+                new DisplayBooksCommand().execute();
             } else if (menuindex == 2)
-                new BooksDisplayAndReserve().reserveBook();
+                new BookReservationCommand().execute();
 
             else if (menuindex == 3)
                    new Program().checkLibraryNumber();
