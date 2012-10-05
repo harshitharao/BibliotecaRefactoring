@@ -13,49 +13,14 @@ public class Program {
 
             InputStreamReader inputStream = new InputStreamReader(System.in);
             BufferedReader reader = new BufferedReader(inputStream);
-            int menuindex = 0;
-            try {
-                String value = reader.readLine();
-                menuindex = Integer.parseInt(value);
-            } catch (Exception e) {
-
-                System.out.println("Enter a valid integer!!");
-            }
+            int menuindex=new ConsoleInput().read();
 
             if (menuindex == 1) {
-                displayBooks();
-            } else if (menuindex == 2) {
-                System.out.println(" Please enter the number of the book you wish to checkout: ");
-                int bookNumber = 0;
-                try {
-                    bookNumber = Integer.parseInt(reader.readLine());
-                } catch (Exception e) {
-                    // Do you know what numbers are!!!
-                    System.out.println("Enter a valid integer!!");
+                new BooksDisplayAndReserve().displayBooks();
+            } else if (menuindex == 2)
+                new BooksDisplayAndReserve().reserveBook();
 
-                }
-                switch (bookNumber) {
-                    case 1:
-                        System.out.println("\n");
-                        System.out.println(" Thank You! Enjoy the book.");
-                        break;
-                    case 2:
-                        System.out.println("\n");
-                        System.out.println(" Thank You! Enjoy the book.");
-                        break;
-                    case 3:
-                        System.out.println("\n");
-                        System.out.println(" Thank You! Enjoy the book.");
-                        break;
-                    case 4:
-                        System.out.println("\n");
-                        System.out.println(" Thank You! Enjoy the book.");
-                        break;
-                    default:
-                        System.out.println("\n");
-                        System.out.println("Sorry we don't have that book yet.");
-                }
-            } else if (menuindex == 3) {
+            else if (menuindex == 3) {
                 if (loggedIn()) {
                     System.out.println("\n");
                     System.out.println("Your library number is " + savedLibraryNumber);
@@ -65,7 +30,7 @@ public class Program {
                     System.out.println("Please talk to Librarian. Thank you.");
                 }
             } else if (menuindex == 4) {
-                displayMovies();
+                new Movie().displayMovies();
             } else if (menuindex == 5) {
                 clearLogin();
                 System.out.println("Enter your library number");
@@ -97,25 +62,7 @@ public class Program {
         }
     }
 
-    private static void displayMovies() {
-        System.out.println(createMovie("Rocky", "John G. Avildsen", "10"));
-        System.out.println(createMovie("Rocky II", "John G. Avildsen", "9"));
-        System.out.println(createMovie("Rocky III", "John G. Avildsen", "8"));
-        System.out.println(createMovie("Rocky IV", "John G. Avildsen", "7"));
-        System.out.println(createMovie("Rocky V", "John G. Avildsen", "8"));
-        System.out.println(createMovie("Drainage", "Francisco Trindade", "N/A"));
-        System.out.println(createMovie("The Shawshank Redemption", "Frank Darabont", "10"));
-        System.out.println(createMovie("The Godfather", "Francis Ford Coppola", "7"));
-        System.out.println(createMovie("Inception", "Frank Darabont", "10"));
-        System.out.println(createMovie("Pulp Fiction", "Quentin Tarantino", "6"));
-    }
 
-    private static void displayBooks() {
-        System.out.println(" 1. Sweet Valley High vol. 4 by John Travolta ");
-        System.out.println(" 2. eXtreme Programming Explained by Kent Beck ");
-        System.out.println(" 3. How to Win Friends and Influence People by Dale Carnagie ");
-        System.out.println(" 4. How to Cheat at TWU Assignements by Anonymous ");
-    }
 
     private static void displayMenu() {
         System.out.println("**********************************************************");
@@ -151,8 +98,5 @@ public class Program {
         savedLibraryNumber = "";
     }
 
-    private static String createMovie(String movieTitle, String movieDirector, String movieRanking) {
-        return movieTitle + " - Director: " + movieDirector + " Rating: " + movieRanking;
-    }
-}
+  }
 
